@@ -113,7 +113,7 @@ padding-top:350px;
   color:rgb(0, 128, 75);
 }
 .section-1{
-    padding-top:40px;
+    padding-top:70px;
     color:#fff;
 }
 .section-1 p{
@@ -183,9 +183,13 @@ padding-top:350px;
     font-size: 30px;
   }
   .info{
-      padding-top:70px;
+      padding-top:20px;
      
       margin-right:150px;
+  }
+  .info .fa{
+    font-size:40px;
+    margin: 0 10px;
   }
 .info p{
     font-size:22px;
