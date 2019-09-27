@@ -7,6 +7,8 @@
 }
 .wrap-1{
    margin-left:300px;
+   position:sticky;
+   top:0;
 }
 form{
   

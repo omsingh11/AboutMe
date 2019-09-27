@@ -14,11 +14,10 @@
   </head>
   <body class="hom"> 
       <div class="container">
-    <div class="wrap-1">
+    <div class="wrap-1" id="nav">
         <div class="row">
-          <div >
-          <div class="box animated fadeInDown">
-            <div class="icon" class="home">
+           <div class="box animated fadeInDown">
+            <div class="icon home">
               <a href="index.html" ><i class="fa fa-home" aria-hidden="true"></i>
               </div>
               <div class="details"><h3>Home</h3>
@@ -51,11 +50,15 @@
               <h3>Project</h3>
             </div>
           </a>
-           
-           </div>
          </div>
         </div>
+         
+   <!--  <div class="menu-toggle navi" onclick="return fixed()">
+          <i class="fa fa-bars" arial-hidden="true"></i>
+        </div>--> 
+      
       </div>
+
     <div class="wrap-2">
         <div class="row">
           <div class="col-sm-6 col-md-6 col-lg-6">
@@ -68,7 +71,7 @@
           </div>
           <div class="col-md-6 col-lg-6">
               <div class="profile2 animated rollIn">
-              <img src="images/preview.jpg" class="img-fluid" id="move" alt="Responsive image" onmouseover="setNewImage()" onmouseout="setOldImage()" width="100%" height="auto">
+              <img src="./images/PicsArt_09-24-04.51.07.jpg" class="img-fluid" id="move" alt="Responsive image" onmouseover="setNewImage()" onmouseout="setOldImage()" width="100%" height="auto">
             </div>
           </div>
          
@@ -87,7 +90,7 @@
      <div class="row">
               <div class="col-sm-6">
             <div class="imags" id="anmi3">
-              <img src="images/mouseout.jpg" alt="Responsive image" class="img-fluid">
+              <img src="./images/mouseout.jpg" alt="Responsive image" class="img-fluid">
             </div>
               </div>
               <div class="col-sm-6">
@@ -163,7 +166,7 @@
       <div class="col-sm-4 col-md-4 col-lg-4">
           <div class="text-center">
             <div id="anmi20">
-        <a href="/project1/index.html"><img src="/project1/images/imag1.jpg" class="img-fluid" alt="Responsive image" class="rounded float-left">Portfolio By Using Cards</a>
+        <a href="./project1/index.html"><img src="./project1/images/imag1.jpg" class="img-fluid" alt="Responsive image" class="rounded float-left">Portfolio By Using Cards</a>
             </div>
         <p id="anmi23">In this project I am used HTML5,CSS3,JAVASCRIPT and JQUERY.With the help of all these languages I am making the portfolio in which all the information are shown in the card.</p>
       </div>
@@ -171,7 +174,7 @@
       <div class="col-sm-4 col-md-4 col-lg-4">
         <div class="text-center">
           <div id="anmi21">
-        <a href="project2/calculator.html"><img src="/project2/Webp.net-resizeimage (1).jpg"  class="img-fluid" alt="Responsive image">Calculator</a>
+        <a href="../project2/calculator.html"><img src="./project2/Webp.net-resizeimage (1).jpg"  class="img-fluid" alt="Responsive image">Calculator</a>
           </div>
         <p id="anmi24">This is my first project which is just normal calculator.I am using HTML5,CSS3,JAVASCRIPT and make them usefull calculator.All the functionality are work properly.</p>
       </div>
@@ -179,15 +182,24 @@
         <div class="col-sm-4 col-md-4 col-lg-4">
             <div class="text-center">
               <div id="anmi22">
-          <a href="project3/index.html"><img src="/project3/Webp.net-resizeimage.jpg"  class="img-fluid" alt="Responsive image" class="rounded float-center">Form Validation</a>
+          <a href="./project3/index.html"><img src="./project3/Webp.net-resizeimage.jpg"  class="img-fluid" alt="Responsive image" class="rounded float-center">Form Validation</a>
               </div>
           <p id="anmi25">My this project are based on form validation.In this form validation. I am using HTML5,CSS3,JAVASCRIPT for making this Registraion form.All the validation  functionality are done by Javascript.</p>
         </div>
         </div>
     </div>
+    
   </div>
   </div>
 </div>
+ <!--<div class="foot">
+    <div class="container">
+      <div class="row">
+      <p>Handicraft by me @omshivam</p>
+  </div>
+  </div>
+  </div>
+-->
     <div class="icon-bar">
      <div class="animated rollIn" ><a href="facebook.com/om.shivam.5648" class="facebook"><i class="fa fa-facebook"></i></a></div>
      <div class="animated rollIn"><a href="https://twitter.com/OSingh11?s=08" class="twitter"><i class="fa fa-twitter"></i></a></div>
@@ -208,12 +220,22 @@
          
       });
   });
+    /*$(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('.wrap-1').toggleClass('.box')
+      })
+    })*/
+    function fixed(){
+     var nav= document.getElementById("nav");
+
+     //nav.style.visibility="visible";
+    }
    
       function setNewImage(){
-        document.getElementById("move").src="images/mouseout.jpg";
+        document.getElementById("move").src="images/oms41.jpg";
       }
       function setOldImage(){
-        document.getElementById("move").src="images/preview.jpg";
+        document.getElementById("move").src="images/PicsArt_09-24-04.51.07.jpg";
       }
      $(document).ready(function(){
         $(window).scroll(function(){
